@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About | Our Ministry | Live Church Service</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">    
+        <link href="carousel.css" rel="stylesheet" type="text/css"/>
+    
+     <style>
+        body {
+            background:  url('assets/images/super.jpg') no-repeat;
+            color:#fff;
+            min-height: 75rem;
+            padding-top: 4.5rem;
+        }
+        
+        .container {
+         max-width: 960px;
+            }
+        
+        .navbar {
+            border-bottom: #c82333 3px solid;
+            opacity: 0.8;
+        }
+
+        #home-section {
+          //  background: url('assets/images/super.jpg')  ;
+            min-height: 700px;
+            background-size: cover;
+            background-attachment: fixed
+        }
+
+        .dark-overlay {
+
+           background-color: rgba(0,0,0,0.7);
+           position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            min-height: 700px;
+        }
+
+        .home-inner {
+            padding-top: 10px;
+            color:blue;
+        //    font-family: monospace;
+            font-size: 13px;
+         
+        }
+        .card-form{
+            opacity:0.8;
+        }
+        
+        .card-text{
+            color:#040505;
+            font-family: cursive;
+            font-size: 13px;         
+        }
+        .fa {
+            color:#008ed6;
+            background: #fff;
+            padding: 4px;
+            border-radius: 5px;
+            font-size: 30px;
+
+        }
+
+      #explore-section .fa {
+          color : #fff;
+          background: #333;
+          padding: 4px;
+          border-radius: 5px;
+          font-size:30px;
+      }
+
+    </style> 
+    </head>
+    <body>
+        <header>
+            
+     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         
+         <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""/></a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">WebTV Church<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Ministries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conferences</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Live Services</a>
+          </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogSection">Testimonies</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Membership</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="More about our Service" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Find Books</button>
+        </form>
+      </div>
+    </nav>
+        </header>        
+        <div class="container">
+            
+            <video width="820" height="480" poster="assets/images/13811.jpg"
+                   controls ="controls" id="vid">
+                <source src="assets/videos/PrayerLine1.mp4" type="video/mp4" 
+                        >
+
+             <track src="devstories-en.vtt" label="English subtitles" 
+                         kind="subtitles" srclang="en" default></track>
+            </video>
+            
+            <canvas width="820" height ="480" id="can">
+            </canvas>         
+            <script>           
+                var v = document.getElementById("vid");
+                var c = document.getElementById("can")
+                        .getContext("2d");
+                // if seeking procedure completed
+                v.addEventListener('seeked', function(){
+                    // draw video on canvas
+                    c.drawImage(v,0,0,820,480);
+                });              
+            </script>
+                
+        </div>
+     
+      
+          
+        <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+        
+        
+        <script src="bootstrap/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/dist/carousel.js" type="text/javascript"></script>
+        <script src="bootstrap/js/dist/collapse.js" type="text/javascript"></script>
+        <script src="bootstrap/js/dist/popover.js" type="text/javascript"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>

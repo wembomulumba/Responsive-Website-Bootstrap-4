@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live Church Service</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">    
+        <link href="carousel.css" rel="stylesheet" type="text/css"/>
+    
+     <style>
+        body {
+            background:  url('assets/images/super.jpg') no-repeat;
+            color:#fff;
+            min-height: 75rem;
+            padding-top: 4.5rem;
+        }
+        .navbar {
+            border-bottom: #c82333 3px solid;
+            opacity: 0.8;
+        }
+
+        #home-section {
+          //  background: url('assets/images/super.jpg')  ;
+            min-height: 700px;
+            background-size: cover;
+            background-attachment: fixed
+        }
+
+        .dark-overlay {
+
+           background-color: rgba(0,0,0,0.7);
+           position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            min-height: 700px;
+        }
+
+        .home-inner {
+            padding-top: 10px;
+            color:blue;
+        //    font-family: monospace;
+            font-size: 13px;
+         
+        }
+        .card-form{
+            opacity:0.8;
+        }
+        
+        .card-text{
+            color:#040505;
+            font-family: cursive;
+            font-size: 13px;         
+        }
+        .fa {
+            color:#008ed6;
+            background: #fff;
+            padding: 4px;
+            border-radius: 5px;
+            font-size: 30px;
+
+        }
+
+      #explore-section .fa {
+          color : #fff;
+          background: #333;
+          padding: 4px;
+          border-radius: 5px;
+          font-size:30px;
+      }
+
+    </style> 
+    </head>
+    <body>
+        <header>
+            
+     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         
+         <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""/></a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">WebTV Church<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Our Ministries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conferences</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link btn btn-danger" href="#">Live Services</a>
+          </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogSection">Testimonies</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="Membership.html">Membership</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="More about our Service" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Find Books</button>
+        </form>
+      </div>
+    </nav>
+        </header>        
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="assets/images/13824.jpg" alt="First slide">     
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Welcome to WebTV Online Church of Christ.</h1>
+                <p>. Whether you're hungry or hurt, lonely or lost, full of questions or looking for a home, there's a place for you at LifeChurch.tv</p>
+                <p><a class="btn btn-lg btn-danger" href="#" role="button">Become a Member</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="assets/images/slides/599763110.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+     <!-- Explore headd section --->
+
+    <section id="explore-head-section">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="p-5">
+                        <h1 class="display-4">Our Online Ministries</h1>
+                        <p class="lead">
+                            2 John 2 ; 7 "Checking the network cables, modem, and router  Reconnecting to Wi-Fi
+                            Running Windows Network Diagnostics,   Reconnecting to Wi-Fi,  Reconnecting to Wi-Fi
+                            Reconnecting to Wi-Fi" 
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary">Find Out More</a>
+                         <a href="#" class="btn btn-danger">Go to WebTV</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+      <!-- End of Explore headd section ---> 
+      
+
+      <div class="album py-5 ">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="assets/images/Z (2).jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="assets/images/Z (3).jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="assets/images/Z.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="assets/images/2Q== (5).jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="assets/images/images (11).jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="assets/images/images (10).jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <section class="container" style="color:black">
+       <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="assets/images/f.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Guided Bible Study Live</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="assets/images/download.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Free InternetTV Packages</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="assets/images/screenshot-1.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Online Conferences</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="assets/images/screenshot-2b.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Radio Broadcasting</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </section>
+          
+      <hr class="featurette-divider">
+      <div class="row featurette" style="color:black; width: 90%; margin-left: 3%">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">WebTV  Church of Chirst <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto"  src="assets/images/slides/iphoneshots.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+     <hr class="featurette-divider">
+      
+       <!-- Home Section --->
+    <section id="home-section">
+        <div class=".dark-overlay">
+
+            <div class="home-inner">
+                <div class="row">
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <h1 class="display-4">Receive Free Channel Packages</h1>
+                        <div class="d-flex flex-row">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check"><></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a mostly barebones HTML document.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a m.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a mostly barebones HTML document.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a m.
+
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex flex-row">
+                            <div class="p-4 align-self-star">
+                                <i class="fa fa-check"><></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a mostly barebones HTML document.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a mostly barebones HTML document.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a m.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a mostly barebones HTML document.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a m.
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex flex-row">
+                            <div class="p-4">
+                                <i class="fa fa-check"><></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a mostly barebones HTML document.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a mostly barebones HTML document.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a m.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a mostly barebones HTML document.
+                                Use this document as a way to quickly start any new project.
+                                All you get is this text and a m.
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card bg-danger text-center card-form">
+                            <div class="card-body">
+                                <h3>Sign Up Today</h3>
+                                <p>Register Today to receive free Church Broadcast</p>
+
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control-lg" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control form-control-lg" placeholder="Password">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="password" class="form-control form-control-lg" placeholder="Confirm Password">
+                                    </div>
+
+                                    <button class="btn btn-outline-light btn-block" type="submit" value="Submit">Submit</button>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+       <section id="blogSection">
+           
+           <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">Fasting</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Humbling our Souls</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#">Continue reading</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block" src="assets/images/screenshot-3.png" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-success">Dreams</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Mysteries of Lights</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#">Continue reading</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block" src="assets/images/screenshot-2.png" alt="Card image cap">
+            
+          </div>
+        </div>
+             
+       </section>
+      
+      
+          
+        <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+        
+        
+        <script src="bootstrap/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/dist/carousel.js" type="text/javascript"></script>
+        <script src="bootstrap/js/dist/collapse.js" type="text/javascript"></script>
+        <script src="bootstrap/js/dist/popover.js" type="text/javascript"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>
